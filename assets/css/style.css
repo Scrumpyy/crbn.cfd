@@ -1,0 +1,105 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    box-sizing:border-box;
+    height:100%;
+    width: 100%;
+    background-image:url(../images/background-image.png);
+    background-position:center;
+    background-size:cover;
+    -o-background-size:cover;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed
+}
+
+.landing-page {
+    font-family: 'Comfortaa', cursive;
+    width: 100%;
+    height: 100%;
+}
+
+.landing-page-content {
+    position: absolute;
+    text-align: center; 
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%); /* for IE 9 */
+    -webkit-transform: translate(-50%, 0%); /* for Safari */
+    width: 40rem;
+}
+
+#isabelle-main-page-title {
+    text-align: center; 
+    filter: drop-shadow(0 0 0.5rem #222);
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 800;
+    font-size: 7rem;
+}
+
+.landing-page-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.landing-page-buttons a {
+    text-decoration: none;
+}
+.landing-page-buttons > div {
+    flex: 1;
+}
+
+.lp-button:hover {
+    background-color: #ed5d5d;
+}
+
+.lp-button {
+    font-size: 24px;
+    color: aliceblue;
+    font-weight: bold;
+    font-family: 'Comfortaa', cursive;
+    background-color: #D53B3C;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.carbon-description {
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+#smol-text {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+#highlighted-text {
+    color: #4AFF93;
+}
+
+#special-highlighted-text {
+    color: #FFD84E;
+    font-weight: 600;
+}
+
+@media(max-width:1000px){
+    .landing-page-content {
+        width: 85%;
+        top: 15%;
+    }
+    #isabelle-main-page-title {
+        font-size: 5rem;
+    }
+    .lp-button {
+        padding: 0.5rem;
+        margin: 0.4rem;
+    }
+}
